@@ -11,16 +11,19 @@ export default function NavBar() {
                 <div className='section-logo'>
                     <img src={logo} alt="" />
                     <input type="text" placeholder="O que você procura?" />
+
                     <div className="btn-entrar">
-                        <FaUserCircle color='#000' size={40} />
-                        <p>Entrar</p>
+                        <Link to="/Login">
+                            <FaUserCircle color='#000' size={40} />
+                            <p>Entrar</p>
+                        </Link>
                     </div>
                 </div>
                 <div className='section-items'>
                     <ul>
                         <li> <Link to="/"> HOME</Link></li>
                         <li> <Link to="/Tenis"> TENIS</Link> </li>
-                        <li>ROUPAS</li>
+                        <li> <Link to="/Roupas"> ROUPAS</Link> </li>
                         <li>ACESSORIOS</li>
                     </ul>
                 </div>
